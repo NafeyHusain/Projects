@@ -1,0 +1,489 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Roboto";
+    list-style: none;
+    box-sizing: border-box;
+    background: #000;
+}
+
+nav {
+    position: fixed;
+    z-index: 100;
+    height: 8vh;
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+.logo {
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration-line: none;
+}
+nav .nav-links ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav .nav-links ul li {
+    padding: 0 4px;
+    list-style: none;
+}
+
+nav .nav-links ul li img {
+    transform: scale(0.45);
+}
+
+section {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bg img {
+    width: 110vw;
+    height: 110vh;
+    filter: brightness(0.6);
+}
+
+.rock1 {
+    position: absolute !important;
+    left: 10vw !important;
+    top: 20vh !important;
+}
+
+.rock1 img {
+    width: 40%;
+    filter: brightness(0.5);
+}
+
+.text h1 {
+    font-family: "AlphaCentauri" !important;
+    font-size: 5vw;
+    color: #fff;
+    letter-spacing: 20px;
+    position: absolute;
+    top: 35vh;
+    left: 34vw;
+}
+
+.earth img {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 34vw;
+    top: 25vh;
+    z-index: 1;
+    filter: brightness(0.7);
+}
+
+.mid {
+    left: -150px !important;
+    bottom: -100px !important;
+    top: unset !important;
+}
+
+.mid img {
+    width: 100%;
+    z-index: 2;
+    left: -20px;
+    top: 20vh !important;
+    filter: brightness(0.8);
+}
+
+.fore {
+    right: -50px !important;
+    bottom: -200px !important;
+    top: 0px !important;
+    left: unset !important;
+}
+
+.fore img {
+    width: 400px;
+    height: 110vh;
+    z-index: 3;
+    filter: brightness(0.5);
+}
+
+/* SWIPER */
+
+#sectiontwo {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.rockbg1 {
+    position: absolute;
+    transform: scale(0.2);
+    filter: brightness(0.2);
+    top: 20vh;
+    left: 0;
+    z-index: 1;
+}
+
+.planet-links {
+    width: 95%;
+    height: 5vh;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.planet-links .swiper-pagination-bullet {
+    opacity: 0.2;
+    outline: none;
+}
+.planet-links .swiper-pagination-bullet-active {
+    color: #fff;
+    opacity: 1;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    background: transparent;
+}
+
+.swiper-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 50px 0;
+}
+
+.swiper-wrapper {
+    transition-delay: 0.5s;
+}
+
+.swiper-slide {
+    height: 400px !important;
+    width: 90% !important;
+    background: transparent;
+}
+
+.swiper-slide:nth-child(1) .slide-img {
+    background-image: url("./images/mercury.png");
+}
+.swiper-slide:nth-child(2) .slide-img {
+    background-image: url("./images/venus.png");
+}
+.swiper-slide:nth-child(3) .slide-img {
+    background-image: url("./images/earth1.png");
+}
+.swiper-slide:nth-child(4) .slide-img {
+    background-image: url("./images/mars.png");
+}
+.swiper-slide:nth-child(5) .slide-img {
+    background-image: url("./images/jupiter.png");
+}
+.swiper-slide:nth-child(6) .slide-img {
+    background-image: url("./images/saturn.png");
+}
+.swiper-slide:nth-child(7) .slide-img {
+    background-image: url("./images/uranus.png");
+}
+.swiper-slide:nth-child(8) .slide-img {
+    background-image: url("./images/neptune.png");
+}
+
+.slide-img {
+    background-position: "center";
+    background-repeat: no-repeat !important;
+    background-size: contain;
+    width: 30%;
+    height: 100%;
+}
+
+.slide-number {
+    position: absolute;
+    top: -30px;
+    left: 30%;
+    width: 200px;
+    height: 120px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.slide-number p {
+    font-size: 40px;
+    font-family: "AlphaCentauri" !important;
+    color: #fff;
+    position: relative;
+}
+
+.slide-number p span {
+    position: absolute;
+}
+
+.slide-detail {
+    position: absolute;
+    top: 130px;
+    left: 30%;
+    z-index: 10;
+    width: 50%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slide-detail p {
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+    opacity: 0.8;
+    line-height: 30px;
+}
+
+.slide-detail p span {
+    position: absolute;
+}
+
+.slide-detail-facts {
+    position: absolute;
+    top: 240px;
+    left: 30%;
+    z-index: 10;
+    width: 50%;
+    height: 400px;
+    overflow: hidden;
+    color: #fff;
+}
+.slide-detail-facts div {
+    display: flex;
+    position: relative;
+}
+.slide-detail-facts div h5 {
+    margin-right: 20px;
+}
+
+.slide-text {
+    position: absolute;
+    top: -150px;
+    left: 22%;
+    z-index: 9;
+    width: 200px;
+    height: 400px;
+    overflow: hidden;
+    opacity: 0.1 !important;
+}
+
+.slide-text h4 {
+    color: #fff;
+    font-size: 100px;
+    position: relative;
+}
+.slide-text h4 span {
+    position: absolute;
+}
+
+.social {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transform: translateX(-270px);
+}
+
+.social ul li {
+    display: block;
+    margin: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 300px;
+    text-align: right;
+    padding: 10px;
+    border-radius: 0 30px 30px 0;
+    transition: all 1s;
+}
+
+.social ul li:hover {
+    transform: translateX(110px);
+}
+
+.social ul li.twitter:hover {
+    background-color: #55acee;
+}
+
+.social ul li.facebook:hover {
+    background-color: #3b5999;
+}
+
+.social ul li.google-plus:hover {
+    background-color: #dd4b39;
+}
+
+.social ul li.instagram:hover {
+    background-color: #e4405f;
+}
+
+.social ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.social ul li a i {
+    text-align: center;
+    margin-left: 14px;
+    color: #000000;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    transform: rotate(0deg);
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.social ul li:hover i {
+    transform: rotate(360deg);
+    transition: all 1s;
+}
+.links {
+    position: absolute;
+    width: 30%;
+    right: 0;
+    top: 0;
+    height: 10vh;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul {
+    list-style: none;
+}
+
+.links a {
+    text-decoration: none;
+    color: #eee;
+    padding: 0.7rem 0;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #485461;
+    background-image: linear-gradient(135deg, #485461 0%, #28313b 74%);
+    overflow-x: hidden;
+    transform-style: preserve-3d;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    height: 3rem;
+}
+
+.menu {
+    max-width: 72rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.logo {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 4rem;
+}
+
+.logo span {
+    font-weight: 300;
+}
+
+.hamburger-menu {
+    height: 4rem;
+    width: 3rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    left: 0;
+    z-index: 5;
+    overflow: hidden;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(43, 51, 59, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner {
+    max-width: 35rem;
+    text-align: center;
+    color: #fff;
+    padding: 0 2rem;
+}
+
+.title {
+    font-size: 2.7rem;
+}
+
+.btn {
+    margin-top: 1rem;
+    padding: 0.6rem 1.8rem;
+    background-color: #1179e7;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.container.active .bar {
+    transform: rotate(360deg);
+    background-color: transparent;
+}
+
+.container.active .bar:before {
+    transform: translateY(0) rotate(45deg);
+}
+
+.container.active .bar:after {
+    transform: translateY(0) rotate(-45deg);
+}
+
+.container.active .main {
+    animation: main-animation 0.5s ease;
+    cursor: pointer;
+    transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
+}
